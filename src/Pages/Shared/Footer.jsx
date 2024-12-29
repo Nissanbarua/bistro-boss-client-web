@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="footer place-items-center  items-center bg-[#1F2937] text-white">
         <div className="p-10">
           <p className="text-3xl">CONTACT US</p>
-          <p className="text-xl">
+          <p className="text-sm ">
             123 ABS Street, Uni 21, Bangladesh
             <br />
             +88 123456789
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="  bg-[#1F2937] text-white text-sm text-center p-4">
-        © {currentYear} Your Company Name. All rights reserved.
+        © {currentYear} Bistro Boss. All rights reserved.
       </div>
     </footer>
   );
