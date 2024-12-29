@@ -1,0 +1,16 @@
+.chef-section {
+  background-image: url("../../../assets/home/chef-service.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+.chef-content {
+  background: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
