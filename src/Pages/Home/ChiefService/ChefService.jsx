@@ -1,7 +1,7 @@
 import "../ChiefService/ChefService.css";
 const ChefService = () => {
   return (
-    <div className="chef-section mt-10 mb-10">
+    <div className="chef-section mt-10 mb-10 md:mt-20 md:mb-20">
       <div className="chef-content md:w-6/12">
         <h1 className="text-4xl font-bold">Bistro Boss</h1>
         <p className="text-lg mt-4">
