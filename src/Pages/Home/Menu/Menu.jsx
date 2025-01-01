@@ -17,7 +17,7 @@ const Menu = () => {
         heading="FROM OUR MENU"
         subHeading="---Check it out---"
       ></SectionTitle>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {menuItems.map((item) => (
           <MenuCard key={item._id} item={item}></MenuCard>
         ))}
