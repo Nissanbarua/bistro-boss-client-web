@@ -1,16 +1,18 @@
-import { useEffect, useState } from "react";
 import SectionTitle from "../../../components/SectionTitle";
 import MenuCard from "../../Shared/MenuCard";
+import useMenu from "../../../Hooks/useMenu";
 
 const Menu = () => {
-  const [menuItems, setMenuItems] = useState([]);
-  useEffect(() => {
-    fetch("/menu.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setMenuItems(data.slice(0, 6));
-      });
-  }, []);
+  // const [menuItems, setMenuItems] = useState([]);
+  // useEffect(() => {
+  //   fetch("/menu.json")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setMenuItems(data.slice(0, 6));
+  //     });
+  // }, []);
+  const [menu] = useMenu();
+  const menuItems = menu.slice(0, 6);
   return (
     <section className="mb-6">
       <SectionTitle
