@@ -1,6 +1,7 @@
 import SectionTitle from "../../../components/SectionTitle";
 import MenuCard from "../../Shared/MenuCard";
 import useMenu from "../../../Hooks/useMenu";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   // const [menuItems, setMenuItems] = useState([]);
@@ -24,6 +25,11 @@ const Menu = () => {
           <MenuCard key={item._id} item={item}></MenuCard>
         ))}
       </div>
+      <Link className="flex justify-center my-5">
+        <button className="btn bg-[#E8E8E8] text-yellow-500 border-b-yellow-500 border-2 hover:bg-black hover:text-white transition duration-200">
+          Order Now
+        </button>
+      </Link>
     </section>
   );
 };

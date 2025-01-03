@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
+
 const MenuCard = ({ item }) => {
   const { name, recipe, image, price } = item;
   return (
-    <div className="flex gap-2  items-center my-2">
+<div>
+<div className="flex gap-2  items-center my-2">
       <div className=" ">
         <img src={image} alt={name} className="h-14 w-14 rounded-badge" />
       </div>
@@ -14,7 +17,9 @@ const MenuCard = ({ item }) => {
         </div>
         <p className="text-gray-500 text-sm">{recipe}</p>
       </div>
+    
     </div>
+</div>
   );
 };
 
