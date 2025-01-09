@@ -5,9 +5,13 @@ import Cover from "../Shared/Cover/Cover";
 import { useState } from "react";
 import useMenu from "../../Hooks/useMenu";
 import OrderTab from "../Shared/OrderTab/OrderTab";
+import { useParams } from "react-router-dom";
 
 const OrderPage = () => {
-  const [tabIndex, setTabIndex] = useState(0);
+  const categories = ["salads", "pizzas", "soups", "desserts", "drinks"];
+  const { category } = useParams();
+  const index = categories.indexOf(category);
+  const [tabIndex, setTabIndex] = useState(index);
   const [menu] = useMenu();
   const salads = menu.filter((item) => item.category === "salad");
   const desserts = menu.filter((item) => item.category === "dessert");
