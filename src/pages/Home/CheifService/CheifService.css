@@ -1,0 +1,8 @@
+.chefService-section {
+  background-image: url("../../../assets/home/chef-service.jpg");
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
